@@ -1,0 +1,91 @@
+/* Some CSS Setup - nothing to do with flexbox */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+div.actcake{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 50px;
+    /*max-width: 890px;*/
+}
+
+.cover {
+  height:80vh;
+  width:100%;
+  font-family: "Inconsolata", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  background-image: url(donuts.jpg); 
+  background-size: 1440px 800px;
+}
+
+a {
+  color:white;
+}
+
+/*Hack to get them to align properly */
+.flex-form > *:not([type="date"]) {
+  border-top:1px solid white;
+  border-bottom:1px solid white;
+}
+
+.flex-form input[type="submit"] {
+  background:black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  color:white;
+}
+
+.flex-form > * {
+  border:0;
+  padding:10px;
+  background:white;
+  line-height:50px;
+  font-size: 20px;
+  border-radius:0;
+  outline:0;
+  border-right:1px solid rgba(0,0,0,0.2);
+  -webkit-appearance:none;
+}
+
+.flex-form > *:last-child {
+  border-right: 0;
+}
+
+/*Flexbox Starts Here*/
+
+.cover {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.flex-form {
+  z-index: 10;
+  border:20px solid rgba(0,0,0,0.3);
+  border-radius:5px;
+  display:flex;
+}
+
+input[type="search"] {
+  flex-basis:500px;
+}
+
+select[id="why"]{
+    flex-basis: 300px;
+}
+
+label[for="from"]{
+    flex-basis: 100px;
+}
+
+input[type="submit"] {
+  flex-basis:100px;
+}
