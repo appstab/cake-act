@@ -17,13 +17,13 @@ div.actcake{
 }
 
 .cover {
-  height:80vh;
+  height:100vh;
   width:100%;
   font-family: "Inconsolata", sans-serif;
   margin: 0;
   overflow: hidden;
-  background-image: url(donuts.jpg); 
-  background-size: 1440px 800px;
+  background-image: url(MP4/Sugar.mp4); 
+  /*background-size: 1440px 800px;*/
 }
 
 a {
@@ -67,7 +67,17 @@ a {
   align-items:center;
 }
 
+.sugar {
+  height:100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
 .flex-form {
+  flex-direction:stretch; 
+  flex-basis: 10 20 80%;
+  
   z-index: 10;
   border:20px solid rgba(0,0,0,0.3);
   border-radius:5px;
